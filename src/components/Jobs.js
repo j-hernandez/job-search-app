@@ -22,8 +22,8 @@ class Jobs extends Component {
     }
 
     render() {
-        const jobsJSX = this.state.jobs.map((j, index) => {
-            return <JobsListItem />
+        const jobsJSX = this.state.jobs.map((job, index) => {
+            return <JobsListItem key={index} {...job} />
         })
         return (
             <div>

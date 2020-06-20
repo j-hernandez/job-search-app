@@ -6,12 +6,12 @@ class JobsListItem extends Component {
         return (
             <div className="JobsListItem">
                 <div className="left">
-                    <b>Job Title</b>
-                    <div>Company</div>
+                    <b>{this.props.title}</b>
+                    <div>{this.props.company}</div>
                 </div>
                 <div className="right">
-                    <b>Type</b>
-                    <div>Timestamp</div>
+                    <b>{this.props.type}</b>
+                    <div>{this.props.created_at}</div>
                 </div>
             </div>
         )
